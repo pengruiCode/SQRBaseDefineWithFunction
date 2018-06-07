@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "SQRDataSave.h"
+#import "TestModel.h"
 
 @interface ViewController ()
 
@@ -16,14 +18,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    //枚举存取数据
+    [SQRDataSave seveDataInUserDefaultsWithData:@"123456" dataEnum:SaveDataEnum_Session customKey:nil];
+    NSLog(@"%@",[SQRDataSave takeOutDataFromDataEnum:SaveDataEnum_Session customKey:nil]);
+
+    //自定义key存取数据
+    [SQRDataSave seveDataInUserDefaultsWithData:@"654321" dataEnum:SaveDataEnum_Session customKey:@"sission"];
+    NSLog(@"%@",[SQRDataSave takeOutDataFromDataEnum:SaveDataEnum_Session customKey:@"sission"]);
+
+    //自定义对象模型存取
+    TestModel *model = [TestModel new];
+    model.userId = @"userId";
+    [SQRDataSave seveDataKeyedUnarchiverInUserDefaultsWithData:model customKey:@"testModel"];
+
+    TestModel *testModel = (TestModel *)[SQRDataSave takeOutDataKeyedUnarchiverFromCustomKey:@"testModel"];
+    NSLog(@"%@",testModel.userId);
+    
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 
 @end
