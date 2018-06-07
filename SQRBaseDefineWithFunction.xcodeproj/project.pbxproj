@@ -8,9 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		9A0680B720C8CDC700167910 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0680B620C8CDC700167910 /* TestModel.m */; };
-		9A0680BE20C8CE0F00167910 /* UIView+Tap.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0680B820C8CE0E00167910 /* UIView+Tap.m */; };
-		9A0680BF20C8CE0F00167910 /* UILabel+FlickerNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0680BB20C8CE0E00167910 /* UILabel+FlickerNumber.m */; };
-		9A0680C020C8CE0F00167910 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0680BD20C8CE0F00167910 /* UIView+Frame.m */; };
+		9A0680D120C8D3BE00167910 /* SQRCommonFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0680C420C8D3BE00167910 /* SQRCommonFunction.m */; };
+		9A0680D220C8D3BE00167910 /* SQRDataSave.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0680C620C8D3BE00167910 /* SQRDataSave.m */; };
+		9A0680D320C8D3BE00167910 /* SQRDateFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0680C820C8D3BE00167910 /* SQRDateFunction.m */; };
+		9A0680D420C8D3BE00167910 /* SQRSystemApiFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0680CA20C8D3BE00167910 /* SQRSystemApiFunction.m */; };
+		9A0680D520C8D3BE00167910 /* UILabel+FlickerNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0680CC20C8D3BE00167910 /* UILabel+FlickerNumber.m */; };
+		9A0680D620C8D3BE00167910 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0680CE20C8D3BE00167910 /* UIView+Frame.m */; };
+		9A0680D720C8D3BE00167910 /* UIView+Tap.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0680D020C8D3BE00167910 /* UIView+Tap.m */; };
 		9A46365720C8C8B8008A8A78 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A46365620C8C8B8008A8A78 /* AppDelegate.m */; };
 		9A46365A20C8C8B8008A8A78 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A46365920C8C8B8008A8A78 /* ViewController.m */; };
 		9A46365D20C8C8B8008A8A78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A46365B20C8C8B8008A8A78 /* Main.storyboard */; };
@@ -19,10 +23,6 @@
 		9A46366520C8C8C5008A8A78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A46366420C8C8C5008A8A78 /* main.m */; };
 		9A46366F20C8C8C6008A8A78 /* SQRBaseDefineWithFunctionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A46366E20C8C8C6008A8A78 /* SQRBaseDefineWithFunctionTests.m */; };
 		9A46367A20C8C8C6008A8A78 /* SQRBaseDefineWithFunctionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A46367920C8C8C6008A8A78 /* SQRBaseDefineWithFunctionUITests.m */; };
-		9A46369120C8C953008A8A78 /* SQRCommonFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A46368A20C8C953008A8A78 /* SQRCommonFunction.m */; };
-		9A46369220C8C953008A8A78 /* SQRDataSave.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A46368C20C8C953008A8A78 /* SQRDataSave.m */; };
-		9A46369320C8C953008A8A78 /* SQRDateFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A46368E20C8C953008A8A78 /* SQRDateFunction.m */; };
-		9A46369420C8C953008A8A78 /* SQRSystemApiFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A46369020C8C953008A8A78 /* SQRSystemApiFunction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,12 +45,21 @@
 /* Begin PBXFileReference section */
 		9A0680B520C8CDC700167910 /* TestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
 		9A0680B620C8CDC700167910 /* TestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
-		9A0680B820C8CE0E00167910 /* UIView+Tap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Tap.m"; sourceTree = "<group>"; };
-		9A0680B920C8CE0E00167910 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
-		9A0680BA20C8CE0E00167910 /* UILabel+FlickerNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+FlickerNumber.h"; sourceTree = "<group>"; };
-		9A0680BB20C8CE0E00167910 /* UILabel+FlickerNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+FlickerNumber.m"; sourceTree = "<group>"; };
-		9A0680BC20C8CE0E00167910 /* UIView+Tap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Tap.h"; sourceTree = "<group>"; };
-		9A0680BD20C8CE0F00167910 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		9A0680C220C8D3BE00167910 /* SQRBaseDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQRBaseDefine.h; sourceTree = "<group>"; };
+		9A0680C320C8D3BE00167910 /* SQRCommonFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQRCommonFunction.h; sourceTree = "<group>"; };
+		9A0680C420C8D3BE00167910 /* SQRCommonFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQRCommonFunction.m; sourceTree = "<group>"; };
+		9A0680C520C8D3BE00167910 /* SQRDataSave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQRDataSave.h; sourceTree = "<group>"; };
+		9A0680C620C8D3BE00167910 /* SQRDataSave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQRDataSave.m; sourceTree = "<group>"; };
+		9A0680C720C8D3BE00167910 /* SQRDateFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQRDateFunction.h; sourceTree = "<group>"; };
+		9A0680C820C8D3BE00167910 /* SQRDateFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQRDateFunction.m; sourceTree = "<group>"; };
+		9A0680C920C8D3BE00167910 /* SQRSystemApiFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQRSystemApiFunction.h; sourceTree = "<group>"; };
+		9A0680CA20C8D3BE00167910 /* SQRSystemApiFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQRSystemApiFunction.m; sourceTree = "<group>"; };
+		9A0680CB20C8D3BE00167910 /* UILabel+FlickerNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+FlickerNumber.h"; sourceTree = "<group>"; };
+		9A0680CC20C8D3BE00167910 /* UILabel+FlickerNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+FlickerNumber.m"; sourceTree = "<group>"; };
+		9A0680CD20C8D3BE00167910 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		9A0680CE20C8D3BE00167910 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		9A0680CF20C8D3BE00167910 /* UIView+Tap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Tap.h"; sourceTree = "<group>"; };
+		9A0680D020C8D3BE00167910 /* UIView+Tap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Tap.m"; sourceTree = "<group>"; };
 		9A46365220C8C8B8008A8A78 /* SQRBaseDefineWithFunction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SQRBaseDefineWithFunction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A46365520C8C8B8008A8A78 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9A46365620C8C8B8008A8A78 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -67,15 +76,6 @@
 		9A46367520C8C8C6008A8A78 /* SQRBaseDefineWithFunctionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SQRBaseDefineWithFunctionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A46367920C8C8C6008A8A78 /* SQRBaseDefineWithFunctionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQRBaseDefineWithFunctionUITests.m; sourceTree = "<group>"; };
 		9A46367B20C8C8C6008A8A78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9A46368820C8C953008A8A78 /* SQRBaseDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQRBaseDefine.h; sourceTree = "<group>"; };
-		9A46368920C8C953008A8A78 /* SQRCommonFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQRCommonFunction.h; sourceTree = "<group>"; };
-		9A46368A20C8C953008A8A78 /* SQRCommonFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQRCommonFunction.m; sourceTree = "<group>"; };
-		9A46368B20C8C953008A8A78 /* SQRDataSave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQRDataSave.h; sourceTree = "<group>"; };
-		9A46368C20C8C953008A8A78 /* SQRDataSave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQRDataSave.m; sourceTree = "<group>"; };
-		9A46368D20C8C953008A8A78 /* SQRDateFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQRDateFunction.h; sourceTree = "<group>"; };
-		9A46368E20C8C953008A8A78 /* SQRDateFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQRDateFunction.m; sourceTree = "<group>"; };
-		9A46368F20C8C953008A8A78 /* SQRSystemApiFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQRSystemApiFunction.h; sourceTree = "<group>"; };
-		9A46369020C8C953008A8A78 /* SQRSystemApiFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQRSystemApiFunction.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +103,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A0680C120C8D3BE00167910 /* BaseDefineWithFunctionImport */ = {
+			isa = PBXGroup;
+			children = (
+				9A0680C220C8D3BE00167910 /* SQRBaseDefine.h */,
+				9A0680C320C8D3BE00167910 /* SQRCommonFunction.h */,
+				9A0680C420C8D3BE00167910 /* SQRCommonFunction.m */,
+				9A0680C520C8D3BE00167910 /* SQRDataSave.h */,
+				9A0680C620C8D3BE00167910 /* SQRDataSave.m */,
+				9A0680C720C8D3BE00167910 /* SQRDateFunction.h */,
+				9A0680C820C8D3BE00167910 /* SQRDateFunction.m */,
+				9A0680C920C8D3BE00167910 /* SQRSystemApiFunction.h */,
+				9A0680CA20C8D3BE00167910 /* SQRSystemApiFunction.m */,
+				9A0680CB20C8D3BE00167910 /* UILabel+FlickerNumber.h */,
+				9A0680CC20C8D3BE00167910 /* UILabel+FlickerNumber.m */,
+				9A0680CD20C8D3BE00167910 /* UIView+Frame.h */,
+				9A0680CE20C8D3BE00167910 /* UIView+Frame.m */,
+				9A0680CF20C8D3BE00167910 /* UIView+Tap.h */,
+				9A0680D020C8D3BE00167910 /* UIView+Tap.m */,
+			);
+			path = BaseDefineWithFunctionImport;
+			sourceTree = SOURCE_ROOT;
+		};
 		9A46364920C8C8B8008A8A78 = {
 			isa = PBXGroup;
 			children = (
@@ -132,7 +154,7 @@
 				9A46365920C8C8B8008A8A78 /* ViewController.m */,
 				9A0680B520C8CDC700167910 /* TestModel.h */,
 				9A0680B620C8CDC700167910 /* TestModel.m */,
-				9A46368720C8C953008A8A78 /* BaseDefineWithFunctionImport */,
+				9A0680C120C8D3BE00167910 /* BaseDefineWithFunctionImport */,
 				9A46365B20C8C8B8008A8A78 /* Main.storyboard */,
 				9A46365E20C8C8C5008A8A78 /* Assets.xcassets */,
 				9A46366020C8C8C5008A8A78 /* LaunchScreen.storyboard */,
@@ -158,28 +180,6 @@
 				9A46367B20C8C8C6008A8A78 /* Info.plist */,
 			);
 			path = SQRBaseDefineWithFunctionUITests;
-			sourceTree = "<group>";
-		};
-		9A46368720C8C953008A8A78 /* BaseDefineWithFunctionImport */ = {
-			isa = PBXGroup;
-			children = (
-				9A46368820C8C953008A8A78 /* SQRBaseDefine.h */,
-				9A46368920C8C953008A8A78 /* SQRCommonFunction.h */,
-				9A46368A20C8C953008A8A78 /* SQRCommonFunction.m */,
-				9A46368B20C8C953008A8A78 /* SQRDataSave.h */,
-				9A46368C20C8C953008A8A78 /* SQRDataSave.m */,
-				9A46368D20C8C953008A8A78 /* SQRDateFunction.h */,
-				9A46368E20C8C953008A8A78 /* SQRDateFunction.m */,
-				9A46368F20C8C953008A8A78 /* SQRSystemApiFunction.h */,
-				9A46369020C8C953008A8A78 /* SQRSystemApiFunction.m */,
-				9A0680BA20C8CE0E00167910 /* UILabel+FlickerNumber.h */,
-				9A0680BB20C8CE0E00167910 /* UILabel+FlickerNumber.m */,
-				9A0680B920C8CE0E00167910 /* UIView+Frame.h */,
-				9A0680BD20C8CE0F00167910 /* UIView+Frame.m */,
-				9A0680BC20C8CE0E00167910 /* UIView+Tap.h */,
-				9A0680B820C8CE0E00167910 /* UIView+Tap.m */,
-			);
-			path = BaseDefineWithFunctionImport;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,16 +313,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A46365A20C8C8B8008A8A78 /* ViewController.m in Sources */,
+				9A0680D520C8D3BE00167910 /* UILabel+FlickerNumber.m in Sources */,
+				9A0680D220C8D3BE00167910 /* SQRDataSave.m in Sources */,
 				9A46366520C8C8C5008A8A78 /* main.m in Sources */,
-				9A46369320C8C953008A8A78 /* SQRDateFunction.m in Sources */,
-				9A46369220C8C953008A8A78 /* SQRDataSave.m in Sources */,
-				9A0680BF20C8CE0F00167910 /* UILabel+FlickerNumber.m in Sources */,
 				9A46365720C8C8B8008A8A78 /* AppDelegate.m in Sources */,
-				9A46369420C8C953008A8A78 /* SQRSystemApiFunction.m in Sources */,
-				9A46369120C8C953008A8A78 /* SQRCommonFunction.m in Sources */,
-				9A0680BE20C8CE0F00167910 /* UIView+Tap.m in Sources */,
+				9A0680D420C8D3BE00167910 /* SQRSystemApiFunction.m in Sources */,
 				9A0680B720C8CDC700167910 /* TestModel.m in Sources */,
-				9A0680C020C8CE0F00167910 /* UIView+Frame.m in Sources */,
+				9A0680D720C8D3BE00167910 /* UIView+Tap.m in Sources */,
+				9A0680D320C8D3BE00167910 /* SQRDateFunction.m in Sources */,
+				9A0680D620C8D3BE00167910 /* UIView+Frame.m in Sources */,
+				9A0680D120C8D3BE00167910 /* SQRCommonFunction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
