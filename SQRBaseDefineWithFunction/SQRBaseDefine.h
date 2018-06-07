@@ -11,7 +11,6 @@
 #import <Toast/UIView+Toast.h>
 #import <MBProgressHUD/MBProgressHUD.h>
 
-
 //打印信息
 //#define NSLog(FORMAT, ...) nil;
 #define NSLog(FORMAT, ...) fprintf(stderr,"%s:%d\t%s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
