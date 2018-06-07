@@ -8,6 +8,13 @@
 
 #ifndef SQRBaseDefine_h
 #define SQRBaseDefine_h
+#import "SQRCommonFunction.h"
+#import "SQRDataSave.h"
+#import "SQRDateFunction.h"
+#import "SQRSystemApiFunction.h"
+#import "UILabel+FlickerNumber.h"
+#import "UIView+Frame.h"
+#import "UIView+Tap.h"
 #import <Toast/UIView+Toast.h>
 #import <MBProgressHUD/MBProgressHUD.h>
 
