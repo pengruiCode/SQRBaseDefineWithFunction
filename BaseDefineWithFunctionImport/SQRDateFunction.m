@@ -7,6 +7,7 @@
 //
 
 #import "SQRDateFunction.h"
+#import "SQRCommonFunction.h"
 
 @implementation SQRDateFunction
 
