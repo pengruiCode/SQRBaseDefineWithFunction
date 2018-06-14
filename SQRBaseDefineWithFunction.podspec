@@ -18,4 +18,8 @@ Pod::Spec.new do |s|
      ss.dependency "Toast"
   end
 
+  s.subspec "MBProgressHUD" do |ss|
+     ss.dependency "MBProgressHUD"
+  end
+
  end
