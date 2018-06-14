@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SQRBaseDefineWithFunction"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary  	 = '通用组件'
   s.homepage     = "https://github.com/pengruiCode/SQRBaseDefineWithFunction.git"
   s.license      = { :type => "MIT", :file => "LICENSE" }
@@ -13,5 +13,9 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
 			基础，通用组件，类扩展以及快捷方法
                    DESC
+
+  s.subspec "Toast" do |ss|
+     ss.dependency "Toast"
+  end
 
  end
