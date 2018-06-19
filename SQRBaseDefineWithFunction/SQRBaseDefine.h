@@ -140,6 +140,24 @@ hud.labelText = @"  加载中...  ";  \
 #define DEF_HiddenMBHUD [MBProgressHUD hideHUDForView:DEF_Window animated:YES];
 
 
+//在java接口请求失败的时候快速处理错误提示
+#define DEF_JAVAERROR_TOAST(error,task,showText)\
+if (task) {\
+    NSHTTPURLResponse * responses = (NSHTTPURLResponse *)task.response;\
+    if (responses.statusCode == 404 || responses.statusCode == 500) {\
+        DEF_Toast(showText);\
+    }else{\
+        if([error userInfo][@"body"]){\
+            NSDictionary *userInfo = [SQRCommonFunction JsonToDictionary:[error userInfo][@"body"]];\
+            DEF_Toast(userInfo[@"message"]);\
+        }\
+    }\
+}else{\
+    DEF_Toast(@"暂无网络，请切换网络重试");\
+}
+
+
+
 //获取图片资源
 #define DEF_GetImage(imageName) [UIImage imageNamed:[NSString stringWithFormat:@"%@",imageName]]
 
