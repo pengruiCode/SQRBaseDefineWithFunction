@@ -59,16 +59,16 @@
 //最上层vc跳转（Push）
 #define DEF_PushToViewController(ViewController) \
 ViewController.hidesBottomBarWhenPushed = YES;\
-[[LKCommonTools topViewController].navigationController pushViewController:ViewController animated:YES]
+[[SQRCommonFunction topViewController].navigationController pushViewController:ViewController animated:YES]
 
 //最上层vc跳转（Present）
 #define DEF_PresentToViewController(ViewController) \
 ViewController.hidesBottomBarWhenPushed = YES;\
-[[LKCommonTools topViewController] presentViewController:ViewController animated:YES completion:nil]
+[[SQRCommonFunction topViewController] presentViewController:ViewController animated:YES completion:nil]
 
 //最上层vc返回
 #define DEF_PopToViewController \
-[[LKCommonTools topViewController].navigationController popViewControllerAnimated:YES]
+[[SQRCommonFunction topViewController].navigationController popViewControllerAnimated:YES]
 
 //设置原生tableviewcell的image大小
 #define DEF_CELL_IMAGEVIEW_SIZE(Width,Height)\
