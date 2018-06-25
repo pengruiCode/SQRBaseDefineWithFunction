@@ -122,6 +122,19 @@ DEF_Window.userInteractionEnabled = YES;\
 #define DEF_Window [UIApplication sharedApplication].keyWindow
 
 
+#define DEF_BackView         for (UIView *item in DEF_Window.subviews) { \
+if(item.tag == 10000) \
+{ \
+[item removeFromSuperview]; \
+UIView * aView = [[UIView alloc] init]; \
+aView.frame = [UIScreen mainScreen].bounds; \
+aView.tag = 10000; \
+aView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.3]; \
+[DEF_Window addSubview:aView]; \
+} \
+} \
+
+
 //设置加载提示框（第三方框架：MBProgressHUD）
 #define DEF_ShowHUDAndActivity(str)  DEF_BackView;\
 MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:DEF_Window animated:YES]; \
