@@ -25,6 +25,8 @@ typedef NS_ENUM(NSUInteger, SaveDataNameEnum) {
     SaveDataEnum_UserType,
     //登录所用账号
     SaveDataEnum_LoginAccount,
+    //app当前版本号
+    SaveDataEnum_AppVersion,
     //极光推送注册ID
     SaveDataEnum_PushRegisterId,
     //当前位置 存入字典。结构为 dict:{@"lon":@"108.865644",@"lat":@"34.245529",@"city":@"029"}
