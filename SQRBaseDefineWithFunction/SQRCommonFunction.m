@@ -8,7 +8,7 @@
 
 #import "SQRCommonFunction.h"
 #import <CommonCrypto/CommonDigest.h>
-
+#import "SQRBaseDefine.h"
 
 #define DefaultThumImageHigth 90.0f
 #define DefaultPressImageHigth 960.0f
@@ -434,11 +434,12 @@ static id _instance;
     [_popup addSubview:tipView];
     [DEF_Window addSubview:_popup];
     tipView.center = _popup.center;
+    DEF_WeakSelf(_popup);
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        _popup.alpha = 1;
+        weak_popup.alpha = 1;
     });
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [_popup setHidden:YES];
+        [weak_popup setHidden:YES];
     });
 }
 
