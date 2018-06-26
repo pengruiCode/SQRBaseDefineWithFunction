@@ -11,6 +11,8 @@
 
 @interface SQRCommonFunction : NSObject
 
+@property (nonatomic,strong) UIView *popup;
+
 #pragma mark --- 字符相关
 
 + (instancetype)sharedInstance;
