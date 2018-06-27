@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SQRBaseDefineWithFunction"
-  s.version      = "0.1.4"
+  s.version      = "0.1.5"
   s.summary  	 = '通用组件'
   s.homepage     = "https://github.com/pengruiCode/SQRBaseDefineWithFunction.git"
   s.license      = { :type => "MIT", :file => "LICENSE" }
