@@ -26,7 +26,7 @@ typedef NS_ENUM(NSUInteger, SaveDataNameEnum) {
     //登录所用账号
     SaveDataEnum_LoginAccount,
     //app当前版本号
-    [SaveDataEnum_AppVersion,],
+    SaveDataEnum_AppVersion,
     //导航主色调(在跳转或设置rootvc的时候存在本地，因为三端主色调不一致)
     SaveDataEnum_MasterColor,
     //极光推送注册ID
