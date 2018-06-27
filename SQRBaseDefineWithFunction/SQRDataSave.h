@@ -11,8 +11,10 @@
 typedef NS_ENUM(NSUInteger, SaveDataNameEnum) {
     //默认标识，在使用自定义key时使用
     SaveDataEnum_Default = 0,
-    //用户标识
+    //用户标识(php)
     SaveDataEnum_Session,
+    //用户标识(java)
+    SaveDataEnum_Token,
     //用户ID
     SaveDataEnum_UserId,
     //用户昵称
