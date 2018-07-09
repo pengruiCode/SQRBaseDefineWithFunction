@@ -24,6 +24,7 @@
 		9A06810420C8DB3700167910 /* UIView+Tap.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0680FD20C8DB3700167910 /* UIView+Tap.m */; };
 		9A46366F20C8C8C6008A8A78 /* SQRBaseDefineWithFunctionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A46366E20C8C8C6008A8A78 /* SQRBaseDefineWithFunctionTests.m */; };
 		9A46367A20C8C8C6008A8A78 /* SQRBaseDefineWithFunctionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A46367920C8C8C6008A8A78 /* SQRBaseDefineWithFunctionUITests.m */; };
+		9A4F920020F2F17D00A86A38 /* NSDictionary+DLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4F91FE20F2F17D00A86A38 /* NSDictionary+DLog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,8 @@
 		9A46367520C8C8C6008A8A78 /* SQRBaseDefineWithFunctionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SQRBaseDefineWithFunctionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A46367920C8C8C6008A8A78 /* SQRBaseDefineWithFunctionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQRBaseDefineWithFunctionUITests.m; sourceTree = "<group>"; };
 		9A46367B20C8C8C6008A8A78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A4F91FE20F2F17D00A86A38 /* NSDictionary+DLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DLog.m"; sourceTree = "<group>"; };
+		9A4F91FF20F2F17D00A86A38 /* NSDictionary+DLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DLog.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +139,8 @@
 				9A0680F720C8DB3700167910 /* SQRSystemApiFunction.m */,
 				9A0680F820C8DB3700167910 /* UILabel+FlickerNumber.h */,
 				9A0680F920C8DB3700167910 /* UILabel+FlickerNumber.m */,
+				9A4F91FF20F2F17D00A86A38 /* NSDictionary+DLog.h */,
+				9A4F91FE20F2F17D00A86A38 /* NSDictionary+DLog.m */,
 				9A0680FA20C8DB3700167910 /* UIView+Frame.h */,
 				9A0680FB20C8DB3700167910 /* UIView+Frame.m */,
 				9A0680FC20C8DB3700167910 /* UIView+Tap.h */,
@@ -316,6 +321,7 @@
 			files = (
 				9A0680EB20C8DB3100167910 /* main.m in Sources */,
 				9A06810020C8DB3700167910 /* SQRDateFunction.m in Sources */,
+				9A4F920020F2F17D00A86A38 /* NSDictionary+DLog.m in Sources */,
 				9A06810320C8DB3700167910 /* UIView+Frame.m in Sources */,
 				9A06810220C8DB3700167910 /* UILabel+FlickerNumber.m in Sources */,
 				9A0680FE20C8DB3700167910 /* SQRCommonFunction.m in Sources */,
