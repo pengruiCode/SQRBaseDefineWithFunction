@@ -35,6 +35,8 @@ typedef NS_ENUM(NSUInteger, SaveDataNameEnum) {
     SaveDataEnum_MasterColor,
     //极光推送注册ID
     SaveDataEnum_PushRegisterId,
+    //三合一当前切换到的平台（express，merchant，company）
+    SaveDataEnum_PresentPort,
     //当前位置 存入字典。结构为 dict:{@"lon":@"108.865644",@"lat":@"34.245529",@"city":@"029"}
     SaveDataEnum_LocationDict
 };
