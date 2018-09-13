@@ -706,6 +706,18 @@ static id _instance;
 }
 
 
++ (NSString *)replaceChinaeseUrl:(NSString *)chinaeseUrl {
+    NSString *urlStr = (NSString *)
+    CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
+                                                              (CFStringRef)chinaeseUrl,
+                                                              (CFStringRef)@"!$&'()*+,-./:;=?@_~%#[]",
+                                                              NULL,
+                                                              kCFStringEncodingUTF8));
+    return urlStr;
+}
+
+
+
 - (NSString *)encryptMD5WithString:(NSString *)string {
     if(string == nil || [string length] == 0)
         return nil;

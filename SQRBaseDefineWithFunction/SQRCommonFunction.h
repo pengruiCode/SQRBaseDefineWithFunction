@@ -262,6 +262,12 @@
  */
 + (NSString *)replaceUnicode:(NSString *)TransformUnicodeString;
 
+/**
+ *  带汉字的URL转义成utf8
+ *  @param chinaeseUrl 带汉字的URL
+ *  @return NSString
+ */
++ (NSString *)replaceChinaeseUrl:(NSString *)chinaeseUrl;
 
 /**
  *  字符串md5加密
