@@ -200,27 +200,33 @@ if (task) {\
 //判断是否为ipod
 #define DEF_IS_IPOD ([[[UIDevice currentDevice] model] isEqualToString:@"iPod touch"])
 
-// 判断是否为 iPhone 5SE
+//判断是否为 iPhone 5SE
 #define DEF_iPhone5SE [[UIScreen mainScreen] bounds].size.width == 320.0f && [[UIScreen mainScreen] bounds].size.height == 568.0f
 
-// 判断是否为iPhone 6/6s
+//判断是否为iPhone 6/6s
 #define DEF_iPhone6_6s [[UIScreen mainScreen] bounds].size.width == 375.0f && [[UIScreen mainScreen] bounds].size.height == 667.0f
 
-// 判断是否为iPhone 6Plus/6sPlus
+//判断是否为iPhone 6Plus/6sPlus
 #define DEF_iPhone6Plus_6sPlus [[UIScreen mainScreen] bounds].size.width == 414.0f && [[UIScreen mainScreen] bounds].size.height == 736.0f
 
-// 判断是否是iPhone X
+//判断是否是iPhone X/Xs
 #define DEF_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+
+//判断是否是iPHone Xr
+#define DEF_iPhoneXr ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(828, 1792), [[UIScreen mainScreen] currentMode].size) && !DEF_IS_IPAD : NO)
+
+//判断是否是iPhone Xs Max
+#define DEF_iPhoneXs_Max ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2688), [[UIScreen mainScreen] currentMode].size) && !DEF_IS_IPAD : NO)
 
 
 // 状态栏高度
-#define DEF_STATUS_BAR_HEIGHT (iPhoneX ? 44.f : 20.f)
+#define DEF_STATUS_BAR_HEIGHT ((DEF_iPhoneX==YES || DEF_iPhoneXr ==YES || DEF_iPhoneXs_Max== YES) ? 44.0 : 20.0)
 
 // 导航栏高度
-#define DEF_NAVIGATION_BAR_HEIGHT (iPhoneX ? 88.f : 64.f)
+#define DEF_NAVIGATION_BAR_HEIGHT ((DEF_iPhoneX==YES || DEF_iPhoneXr ==YES || DEF_iPhoneXs_Max== YES) ? 88.0 : 64.0)
 
 // tabBar高度
-#define DEF_TAB_BAR_HEIGHT (iPhoneX ? (49.f+34.f) : 49.f)
+#define DEF_TAB_BAR_HEIGHT ((DEF_iPhoneX==YES || DEF_iPhoneXr ==YES || DEF_iPhoneXs_Max== YES) ? (49.0+34.0) : 49.0)
 
 
 //获取系统版本
